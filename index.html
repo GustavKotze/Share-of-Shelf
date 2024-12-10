@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelf Share Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Shelf Share Calculator</h1>
+        <p class="tutorial">Calculate how your brand's shelf space compares to your goals!</p>
+        
+        <label for="totalShelfSpace">Total Shelf Space (in units/facings):</label>
+        <input type="number" id="totalShelfSpace" min="1" required>
+        <span class="tutorial">Enter the total number of shelf units/facings available.</span>
+
+        <label for="brandSpace">Brand Space (in units/facings):</label>
+        <input type="number" id="brandSpace" min="0" required>
+        <span class="tutorial">Input how many units/facings your brand currently occupies.</span>
+
+        <label for="targetShare">Target Share (%):</label>
+        <input type="number" id="targetShare" min="0" max="100" required>
+        <span class="tutorial">Set your desired percentage of shelf space for your brand.</span>
+
+        <button onclick="calculateShare()">Calculate Share</button>
+        <span class="tutorial">Click here to see your shelf share analysis.</span>
+
+        <div id="result">
+            <h2>Results:</h2>
+        </div>
+        
+        <div class="info-box">
+            <h3>About Share of Shelf Calculator</h3>
+            <p>This tool helps you to quickly analyze how much shelf space your brand occupies relative to the total available space. Understanding your shelf share allows you to assess your product's visibility and market presence, helping you strategize for better placement or expansion.</p>
+            <h3>How to use this tool</h3>
+            <p>Count the total product facings on the shelf. Then count your brand's number of facings. If you have a target % you wish to achieve, add it to the calculator to see how far from target the number of units on the shelf are.</p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
